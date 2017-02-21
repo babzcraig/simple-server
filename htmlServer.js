@@ -19,7 +19,7 @@ http.createServer(function(req,res) {
     var fileName = path.join(process.cwd(), unescape(uri));
     console.log('Loading...' + uri);
     var stats;
-
+ 
     try {
         stats = fs.lstatSync(fileName);
     } catch(e) {
